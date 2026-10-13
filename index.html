@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#dcebdc">
+<title>Princess & Ayang 💚</title>
+<style>
+:root{--sage:#dcebdc;--deep:#456b53;--leaf:#789b7a;--cream:#fffdf6;--pink:#f8e5e5}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,'Times New Roman',serif;color:#35533e;background:linear-gradient(180deg,#edf5e9,#dcebdc 48%,#f9f6ec);min-height:100vh;overflow-x:hidden}
+.wrap{width:min(92%,680px);margin:0 auto;padding:28px 0 50px;position:relative}
+header{text-align:center;padding:28px 8px 22px}
+.pill{display:inline-block;border:1px solid #b6ceb6;background:#ffffffa8;border-radius:999px;padding:8px 14px;font:12px Arial,sans-serif;letter-spacing:1.5px;text-transform:uppercase}
+h1{font-size:clamp(2.5rem,9vw,4.4rem);line-height:1;margin:18px 0 10px;color:#456b53;font-weight:normal}
+.subtitle{font:15px/1.7 Arial,sans-serif;color:#63806a;margin:0 auto;max-width:430px}
+.flower{font-size:30px;letter-spacing:8px;margin:18px 0}
+.card{background:#fffdf6e8;border:1px solid #d0e0ce;border-radius:26px;padding:24px;margin:18px 0;box-shadow:0 12px 30px #55765b12}
+h2{font-weight:normal;font-size:1.65rem;margin:0 0 14px;color:#456b53}
+.letter{font-size:17px;line-height:1.85;white-space:pre-line}
+.signature{font-style:italic;text-align:right;margin-top:18px;color:#64856a}
+.music{display:flex;align-items:center;gap:14px}
+.disc{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;flex-shrink:0;background:repeating-radial-gradient(circle,#55795d 0 3px,#75977b 4px 7px);color:white;font-size:23px;box-shadow:0 4px 12px #456b5330}
+.music p{margin:5px 0;font:14px/1.5 Arial,sans-serif;color:#6d846f}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:13px 19px;background:#587d60;color:white;text-decoration:none;font:bold 14px Arial,sans-serif;cursor:pointer;box-shadow:0 5px 14px #456b5325;transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn.secondary{background:#edf4e9;color:#456b53;border:1px solid #c8dbc6;box-shadow:none}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.tiny{font:12px/1.6 Arial,sans-serif;color:#7b927d}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.photo{background:#fff;border:1px solid #d4e2d0;border-radius:13px;padding:9px 9px 14px;box-shadow:0 7px 17px #456b5312;transform:rotate(-1deg)}
+.photo:nth-child(2){transform:rotate(1.5deg)}
+.photo-frame{height:190px;border-radius:7px;background:linear-gradient(135deg,#e9f2e4,#f8e8e8);display:flex;align-items:center;justify-content:center;overflow:hidden;color:#68836b;text-align:center;font:14px/1.5 Arial,sans-serif}
+.photo-frame img{width:100%;height:100%;object-fit:cover;display:none}
+.photo-caption{text-align:center;padding-top:10px;font:italic 15px Georgia,serif;color:#56765b}
+.upload{display:block;margin:10px auto 0;font:12px Arial,sans-serif;color:#587d60;text-align:center;cursor:pointer}
+.upload input{display:block;max-width:100%;width:100%;font-size:11px;margin-top:7px}
+.reasons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.reason{border-radius:17px;padding:15px 12px;background:#edf4e9;text-align:center;font:14px/1.5 Arial,sans-serif}
+.reason span{display:block;font-size:24px;margin-bottom:7px}
+.surprise{text-align:center}
+#surpriseText{display:none;font-size:17px;line-height:1.8;margin-top:18px}
+.answers{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+#answerResult{display:none;margin-top:18px;background:#edf4e9;border-radius:18px;padding:16px;font:15px/1.7 Arial,sans-serif}
+footer{text-align:center;font:12px/1.8 Arial,sans-serif;color:#77917b;padding:20px 10px}
+.heart{position:fixed;bottom:-40px;pointer-events:none;z-index:4;animation:floatUp linear forwards;opacity:.8}
+@keyframes floatUp{0%{transform:translateY(0) rotate(0deg);opacity:0}10%{opacity:.8}100%{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+@media(max-width:420px){.card{padding:20px}.letter{font-size:16px}.photo-frame{height:145px}.reasons{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header>
+<div class="pill">a little place for us ♡</div>
+<div class="flower">🌿 🤍 🌷</div>
+<h1>Princess<br>& Ayang</h1>
+<p class="subtitle">Satu sudut kecil di internet, khas untuk seseorang yang sangat istimewa. 💚</p>
+</header>
+
+<section class="card">
+<h2>Galeri kenangan kita 📸</h2>
+<p class="subtitle" style="text-align:left;margin:0 0 16px">Pilih gambar Princess dan Ayang dari telefon untuk lihat dalam bingkai Polaroid ni.</p>
+<div class="gallery">
+<div class="photo">
+<div class="photo-frame" id="frame1"><div id="placeholder1">🌷<br>Gambar Princess & Ayang</div><img id="img1" alt="Gambar kenangan pertama"></div>
+<div class="photo-caption">my favourite memory ♡</div>
+<label class="upload">Pilih gambar 1<input type="file" accept="image/*" id="file1"></label>
+</div>
+<div class="photo">
+<div class="photo-frame" id="frame2"><div id="placeholder2">💚<br>Satu lagi kenangan manis</div><img id="img2" alt="Gambar kenangan kedua"></div>
+<div class="photo-caption">us, in our little world ♡</div>
+<label class="upload">Pilih gambar 2<input type="file" accept="image/*" id="file2"></label>
+</div>
+</div>
+<p class="tiny" style="margin:14px 0 0">Nota: gambar yang dipilih di sini hanya dipaparkan pada peranti ini. Untuk kekalkan gambar dalam link website, ikut arahan dalam fail CARA_TERBITKAN.txt.</p>
+</section>
+
+<section class="card">
+<h2>Untuk Princess, daripada Ayang 💌</h2>
+<div class="letter">Hai Princess sayanggg,
+
+Kalau Princess tengah baca ni, Ayang cuma nak Princess tahu yang kehadiran Princess buat hari-hari Ayang jadi lebih bermakna. Terima kasih sebab hadir dalam hidup Ayang dan bagi Ayang banyak sebab untuk senyum.
+
+Ayang mungkin tak sempurna, kadang-kadang tersilap dan tak pandai susun kata. Tapi Ayang nak terus belajar jadi seseorang yang lebih baik, yang boleh dengar Princess, hargai perasaan Princess dan buat Princess rasa disayangi.
+
+Kalau hari Princess penat, rehatlah ya. Kalau hari Princess tak berapa baik, ingat yang Princess tetap berharga. Tak perlu jadi sempurna untuk layak disayangi.
+
+Semoga kita terus jujur, saling memahami dan jaga hati satu sama lain. Terima kasih sebab jadi Princess Ayang. Kalau boleh, Ayang nak cipta lebih banyak kenangan manis dengan Princess, satu hari demi satu hari. 🌷</div>
+<div class="signature">Dengan penuh sayang,<br>Ayang 💚</div>
+</section>
+
+<section class="card">
+<div class="music"><div class="disc">♫</div><div><h2 style="margin:0">Lagu kita 🎶</h2><p>Komang — Raim Laode</p><p class="tiny">Tekan butang untuk buka lagu melalui YouTube.</p></div></div>
+<div class="actions">
+<a class="btn" href="https://www.youtube.com/results?search_query=Raim+Laode+Komang+official" target="_blank" rel="noopener">▶ Dengar Komang</a>
+<button class="btn secondary" id="heartBtn" type="button">♡ Hantar hati</button>
+</div>
+</section>
+
+<section class="card">
+<h2>Perkara kecil yang Ayang hargai 🌼</h2>
+<div class="reasons">
+<div class="reason"><span>😊</span>Senyuman Princess</div>
+<div class="reason"><span>💬</span>Cerita-cerita kita</div>
+<div class="reason"><span>🌱</span>Cara kita belajar memahami</div>
+<div class="reason"><span>🤍</span>Usaha kita saling menjaga</div>
+</div>
+</section>
+
+<section class="card surprise">
+<h2>Princess sayang Ayang tak? 🥹💚</h2>
+<p class="subtitle">Pilih jawapan, Princess! Hehe 🌷</p>
+<div class="answers">
+<button class="btn" type="button" data-answer="sayang">Sayanggg 💚</button>
+<button class="btn secondary" type="button" data-answer="mestilah">Mestilahhh! 🥰</button>
+</div>
+<div id="answerResult"></div>
+<hr style="border:0;border-top:1px solid #d9e6d6;margin:22px 0">
+<h2>Surprise kecil untuk Princess 🎁</h2>
+<button class="btn" id="surpriseBtn" type="button">Buka surprise 💚</button>
+<div id="surpriseText">Princess tak perlu buat apa-apa yang besar untuk jadi istimewa. Jadi diri Princess pun dah cukup. Terima kasih sebab jadi sebahagian daripada cerita Ayang. Semoga apa pun yang kita lalui, kita sentiasa memilih untuk bercakap dengan jujur, menghormati satu sama lain dan saling memberi ruang untuk membesar. You are appreciated, Princess. 🌿💚</div>
+</section>
+<footer>Dibuat dengan hati oleh Ayang, khas untuk Princess. 💚<br><span>Little by little, love grows gently.</span></footer>
+</main>
+<script>
+function floatHeart(){
+ const h=document.createElement('div');h.className='heart';
+ const symbols=['💚','🤍','🌿','♡','🌷'];h.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+ h.style.left=(Math.random()*96)+'vw';h.style.fontSize=(18+Math.random()*20)+'px';h.style.animationDuration=(4+Math.random()*4)+'s';
+ document.body.appendChild(h);setTimeout(()=>h.remove(),8500);
+}
+setInterval(()=>{if(Math.random()>.35)floatHeart()},900);
+document.getElementById('heartBtn').addEventListener('click',()=>{for(let i=0;i<12;i++)setTimeout(floatHeart,i*90)});
+document.getElementById('surpriseBtn').addEventListener('click',()=>{
+ const el=document.getElementById('surpriseText'),open=el.style.display==='block';el.style.display=open?'none':'block';
+ document.getElementById('surpriseBtn').textContent=open?'Buka surprise 💚':'Aww, untuk Princess 🤍';
+ if(!open)for(let i=0;i<16;i++)setTimeout(floatHeart,i*80);
+});
+document.querySelectorAll('[data-answer]').forEach(btn=>btn.addEventListener('click',()=>{
+ const result=document.getElementById('answerResult');result.style.display='block';
+ result.innerHTML=btn.dataset.answer==='sayang'
+ ?'Ayangggg, jawapan ni buat hati Ayang berbunga! 🌷💚 Nah, satu hujan hati untuk Princess!'
+ :'ALAMAKKK, Princess comelll sangat! 🥹💚 Ayang kirim peluk dari jauh dan sejuta hati untuk Princess!';
+ for(let i=0;i<14;i++)setTimeout(floatHeart,i*70);
+}));
+function previewFile(inputId,imgId,placeholderId){
+ const input=document.getElementById(inputId);
+ input.addEventListener('change',()=>{
+  const file=input.files&&input.files[0];if(!file)return;
+  if(!file.type.startsWith('image/'))return;
+  const reader=new FileReader();
+  reader.onload=e=>{const img=document.getElementById(imgId);img.src=e.target.result;img.style.display='block';document.getElementById(placeholderId).style.display='none'};
+  reader.readAsDataURL(file);
+ });
+}
+previewFile('file1','img1','placeholder1');previewFile('file2','img2','placeholder2');
+</script>
+</body>
+</html>
